@@ -1,6 +1,8 @@
 # Center Row
 ## Copyright
-Center Row is Copyright © 2016-present Corporation for Digital Scholarship, Vienna, Virginia, USA http://digitalscholar.org
+CRNC is adapted from the Center Row theme by the Omeka-S team, which is Copyright © 2016-present Corporation for Digital Scholarship, Vienna, Virginia, USA http://digitalscholar.org
+
+This adaptation is solely for the use of the Civil Rights in a Northern City website.
 
 The Corporation for Digital Scholarship distributes the Omeka source code
 under the GNU General Public License, version 3 (GPLv3). The full text
