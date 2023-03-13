@@ -9,6 +9,7 @@ $this->headTitle()->append($this->setting('installation_title', 'Omeka S'));
 $this->headLink()->prependStylesheet('//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic');
 $this->headLink()->prependStylesheet($this->assetUrl('css/iconfonts.css', 'Omeka'));
 $this->headLink()->appendStylesheet($this->assetUrl('css/style.css'));
+$this->headLink()->appendStylesheet($this->assetUrl('css/crnc.css'));
 $this->headScript()->prependFile($this->assetUrl('js/centerrow.js'));
 $this->headScript()->prependFile($this->assetUrl('js/jquery-accessibleMegaMenu.js'));
 $this->headScript()->prependFile($this->assetUrl('js/global.js', 'Omeka'));
@@ -48,54 +49,11 @@ $userBar = $this->userBar();
         <a id="skipnav" href="#content"><?php echo $this->translate('Skip to main content'); ?></a>
         <?php echo $userBar; ?>
 
-        <div id="main-menu">
-          <style>
-            header nav .navigation {
-              background-color: #951936;
-              position: relative;
-              list-style-type: none;
-              padding: 0;
-              display: flex;
-              justify-content: space-between;
-              align-items: stretch;
-              border-top: 0 solid #dedede;
-              border-bottom: 0 solid #dedede;
-              padding: 0 24px;
-              margin: 0;
-            }
-            header nav .navigation a {
-              color: white;
-              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
-            .crnc-banner {
-              background-image: url("http://northerncity.library.temple.edu/themes/civil-rights/css/body.png");
-              background-repeat: repeat-x;
-              position: relative;
-              top: -48px;
-              height: 120px;
-            }
-            .crnc-banner h1 {
-            }
-            .crnc-banner h1 a {
-              color: white;
-              text-align: left;
-              text-shadow: 2px 2px 2px #951936;
-              padding-left: 3rem;
-              padding-top: 2px;
-              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
-            .crnc-banner h1 img {
-              float: right;
-              padding-right: 28px;
-            }
-          </style>
-        </div>
-
         <header>
           <?php echo $site->publicNav()->menu()->setPartial('common/accessible-mega-menu.phtml')->renderPartial(); ?>
           <div class="crnc-banner">
             <h1>
-              <img src="http://northerncity.library.temple.edu/themes/civil-rights/css/temple-logo.png" />
+              <img src="/themes/crnc/asset/img/temple-logo.png" />
               <a href="<?php echo $site->url(); ?>" class="site-title">
               <?php if ($this->themeSetting('logo')): ?>
                   <img src="<?php echo $this->themeSettingAssetUrl('logo'); ?>" alt="<?php echo $escape($siteTitle); ?>" />
