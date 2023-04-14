@@ -1,0 +1,8 @@
+<nav id="top-nav" class="closed">
+  <button type="button" class="menu-toggle" aria-label="Toggle Menu"></button>
+  <?php
+  echo $site->publicNav()->menu()->renderMenu(null, [
+      'maxDepth' => $this->themeSetting('nav_depth') - 1
+  ]);
+  ?>
+</nav>
