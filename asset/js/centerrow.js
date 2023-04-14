@@ -60,5 +60,28 @@ if (!CenterRow) {
                 $('#query').focus();
             }
         });
-    });
+
+        $('.menu-toggle').click(function() {
+          $('.nav-menu').toggleClass('open');
+          $('.nav-menu a').first().focus();
+      });
+
+      // $('header').click(function(e){
+      //     $target = $(e.target);
+      //     if ($target.is("header")) {
+      //         // close navigation
+      //         if ($('body').hasClass('menu-open')) {
+      //             $('.nav-menu').toggleClass('open').toggleClass('closed');
+      //             $('body').removeClass('menu-open');
+      //         }
+      //     }
+      //     if ($target.is( ".nav-menu ul, .nav-menu li" )) {
+      //         // close navigation
+      //         if ($('body').hasClass('menu-open')) {
+      //             $('.nav-menu').toggleClass('open').toggleClass('closed');
+      //             $('body').removeClass('menu-open');
+      //         }
+      //     }
+      // });
+  });
 })(jQuery)
