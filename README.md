@@ -1,4 +1,6 @@
-# Center Row
+# Civil rights in a Northern City
+A new release should be downloaded locally and that zip file should be uploaded to the release's files section so that the script in Omeka pulls from/to the correct directory.
+
 ## Copyright
 CRNC is adapted from the Center Row theme by the Omeka-S team, which is Copyright © 2016-present Corporation for Digital Scholarship, Vienna, Virginia, USA http://digitalscholar.org
 
